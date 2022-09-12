@@ -57,9 +57,30 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000000">
-
     </View>
 
-    <include layout="@layout/item_post" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/item_post">
+
+            </include>
+            <include layout="@layout/item_post">
+
+            </include>
+            <include layout="@layout/item_post">
+
+            </include>
+            <include layout="@layout/item_post">
+
+            </include>
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
 
