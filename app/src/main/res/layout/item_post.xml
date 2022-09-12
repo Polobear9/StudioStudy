@@ -7,15 +7,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        >
+        android:padding="8dp">
 
         <ImageView
             android:id="@+id/iv_userName"
-            android:background="#f0e68c"
             android:layout_width="36sp"
             android:layout_height="36sp"
-            android:layout_alignParentLeft="true">
+            android:layout_alignParentLeft="true"
+            android:background="#f0e68c">
         </ImageView>
 
         <TextView
@@ -25,100 +24,100 @@
             android:layout_marginTop="8dp"
             android:layout_toRightOf="@id/iv_userName"
             android:text="here_insert"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold">
+        </TextView>
     </RelativeLayout>
 
     <ImageView
-        android:padding="8dp"
-        android:src="@drawable/laveder"
-        android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        />
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/laveder" />
 
     <RelativeLayout
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
         <ImageView
             android:id="@+id/iv_like"
-            android:src="@drawable/likeon"
             android:layout_width="23dp"
             android:layout_height="23dp"
             android:adjustViewBounds="true"
-            android:elevation="4dp"/>
+            android:elevation="4dp"
+            android:src="@drawable/likeon" />
+
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:textStyle="bold"
-            android:layout_toRightOf="@id/iv_like"
             android:layout_toLeftOf="@id/iv_save"
-            android:text="3K..Likes"
+            android:layout_toRightOf="@id/iv_like"
             android:lines="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="3K..Likes"
+            android:textStyle="bold" />
+
         <ImageView
-            android:src="@drawable/saveicon"
             android:id="@+id/iv_save"
-            android:layout_alignParentRight="true"
             android:layout_width="30dp"
-            android:layout_height="30dp"/>
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/saveicon" />
 
     </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#000000"
-        >
+        android:background="#000000">
     </View>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="4dp"
-        android:paddingTop="4dp"
         android:paddingLeft="16dp"
+        android:paddingTop="4dp"
         android:paddingRight="16dp"
-        >
+        android:paddingBottom="4dp">
 
         <TextView
             android:id="@+id/tv_uploder"
-            android:textSize="15dp"
-            android:text="here_insertID"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:lines="1"
-            android:maxLength="10">
+            android:maxLength="10"
+            android:text="here_insertID"
+            android:textSize="15dp"
+            android:textStyle="bold">
 
         </TextView>
+
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/tv_uploder"
             android:lines="1"
-            android:text="here is input the..."
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-        >
+            android:text="here is input the...">
 
         </TextView>
     </RelativeLayout>
+
     <LinearLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:paddingLeft="16dp"
-        >
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp">
+
         <TextView
-            android:text="10 minutes ago"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:text="10 minutes ago">
         </TextView>
 
     </LinearLayout>
@@ -126,15 +125,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        >
+        android:gravity="center">
+
         <Button
             android:id="@+id/bt_toHome"
-            android:text="PUSH"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true">
+            android:text="PUSH">
 
         </Button>
     </RelativeLayout>

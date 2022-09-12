@@ -49,6 +49,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/dm">
+
         </ImageView>
     </RelativeLayout>
 
@@ -56,9 +57,9 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000000">
+
     </View>
 
     <include layout="@layout/item_post" />
-
 </LinearLayout>
 
