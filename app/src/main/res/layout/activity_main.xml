@@ -47,14 +47,25 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
-        <Button
-            android:id="@+id/bt_toPost"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_userName"
+            android:background="#f0e68c"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_alignParentLeft="true">
+        </ImageView>
+
+        <TextView
+            android:layout_toRightOf="@id/iv_userName"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="350dp"
-            android:text="Push"
-            >
-        </Button>
+            android:text="here_insert" />
     </RelativeLayout>
     <ScrollView
         android:layout_width="wrap_content"

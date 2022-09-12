@@ -7,7 +7,7 @@
     <ImageView
         android:padding="8dp"
         android:src="@drawable/laveder"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         />
@@ -30,10 +30,11 @@
         <TextView
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
+            android:textStyle="bold"
             android:layout_toRightOf="@id/iv_like"
             android:layout_toLeftOf="@id/iv_share"
             android:layout_centerVertical="true"
-            android:text="123213213313421553255312341322135324324687615"
+            android:text="3K..Likes"
             android:lines="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -61,6 +62,7 @@
         <TextView
             android:id="@+id/tv_uploder"
             android:text="here_insertID"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:lines="1"
