@@ -19,14 +19,13 @@
         </ImageView>
 
         <TextView
-            android:layout_toRightOf="@id/iv_userName"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="here_insert">
-        </TextView>
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_userName"
+            android:text="here_insert"
+            android:textStyle="bold"></TextView>
     </RelativeLayout>
 
     <ImageView
@@ -57,14 +56,14 @@
             android:layout_marginRight="8dp"
             android:textStyle="bold"
             android:layout_toRightOf="@id/iv_like"
-            android:layout_toLeftOf="@id/iv_share"
+            android:layout_toLeftOf="@id/iv_save"
             android:text="3K..Likes"
             android:lines="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
             android:src="@drawable/saveicon"
-            android:id="@+id/iv_share"
+            android:id="@+id/iv_save"
             android:layout_alignParentRight="true"
             android:layout_width="30dp"
             android:layout_height="30dp"/>
