@@ -24,7 +24,9 @@
             android:id="@+id/iv_like"
             android:background="#435634"
             android:layout_width="48dp"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:elevation="4dp"/>
         <TextView
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
