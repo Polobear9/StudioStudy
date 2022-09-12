@@ -22,9 +22,9 @@
         >
         <ImageView
             android:id="@+id/iv_like"
-            android:background="#435634"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:src="@drawable/likeon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
             android:adjustViewBounds="true"
             android:elevation="4dp"/>
         <TextView
@@ -33,17 +33,16 @@
             android:textStyle="bold"
             android:layout_toRightOf="@id/iv_like"
             android:layout_toLeftOf="@id/iv_share"
-            android:layout_centerVertical="true"
             android:text="3K..Likes"
             android:lines="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
+            android:src="@drawable/saveicon"
             android:id="@+id/iv_share"
             android:layout_alignParentRight="true"
-            android:background="#845345"
-            android:layout_width="48dp"
-            android:layout_height="48dp"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
 
     </RelativeLayout>
 
@@ -57,10 +56,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
 
         <TextView
             android:id="@+id/tv_uploder"
+            android:textSize="15dp"
             android:text="here_insertID"
             android:textStyle="bold"
             android:layout_width="wrap_content"
@@ -81,6 +85,19 @@
 
         </TextView>
     </RelativeLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:text="10 minutes ago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -96,8 +113,6 @@
             android:layout_alignParentLeft="true">
 
         </Button>
-
-
     </RelativeLayout>
 
 
