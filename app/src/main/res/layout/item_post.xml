@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:padding="8dp"
+        android:src="@drawable/laveder"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        />
+
+    <RelativeLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/iv_like"
+            android:background="#435634"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/iv_like"
+            android:layout_toLeftOf="@id/iv_share"
+            android:layout_centerVertical="true"
+            android:text="123213213313421553255312341322135324324687615"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_alignParentRight="true"
+            android:background="#845345"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_uploder"
+            android:text="here_insertID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLength="10">
+
+        </TextView>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_uploder"
+            android:lines="1"
+            android:text="here is input the..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        >
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:text="PUSH"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
