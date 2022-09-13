@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -13,17 +14,18 @@
             android:id="@+id/iv_userName"
             android:layout_width="36sp"
             android:layout_height="36sp"
-            android:layout_alignParentLeft="true"
-            android:background="#f0e68c">
+            android:layout_alignParentStart="true"
+            android:background="#f0e68c"
+            android:contentDescription="@string/todo">
         </ImageView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_toRightOf="@id/iv_userName"
-            android:text="here_insert"
+            android:layout_toEndOf="@id/iv_userName"
+            android:text="@string/here_insert"
             android:textStyle="bold">
         </TextView>
     </RelativeLayout>
@@ -33,7 +35,9 @@
         android:layout_height="350dp"
         android:padding="8dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/laveder" />
+        android:src="@drawable/laveder"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -94,7 +98,6 @@
             android:text="here_insertID"
             android:textSize="15dp"
             android:textStyle="bold">
-
         </TextView>
 
         <TextView
@@ -105,8 +108,8 @@
             android:layout_toRightOf="@id/tv_uploder"
             android:lines="1"
             android:text="here is input the...">
-
         </TextView>
+
     </RelativeLayout>
 
     <LinearLayout
@@ -134,8 +137,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:text="PUSH">
-
         </Button>
+
     </RelativeLayout>
 
 
