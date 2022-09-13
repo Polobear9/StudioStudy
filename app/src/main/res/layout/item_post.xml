@@ -8,7 +8,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:padding="8dp"
+        >
 
         <ImageView
             android:id="@+id/iv_userName"
@@ -26,8 +29,17 @@
             android:layout_marginTop="8dp"
             android:layout_toEndOf="@id/iv_userName"
             android:text="@string/here_insert"
-            android:textStyle="bold">
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap">
         </TextView>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:background="#435945"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/todo2">
+        </ImageView>
     </RelativeLayout>
 
     <ImageView
@@ -51,11 +63,11 @@
             android:id="@+id/iv_like"
             android:layout_width="23dp"
             android:layout_height="23dp"
-            android:adjustViewBounds="true"
-            android:elevation="4dp"
+            android:layout_marginTop="3dp"
             android:src="@drawable/likeon" />
 
         <TextView
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -113,6 +125,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="16dp">
