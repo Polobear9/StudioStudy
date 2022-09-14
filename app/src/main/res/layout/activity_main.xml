@@ -58,23 +58,64 @@
         android:background="#000000">
     </View>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#353654"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:background="#f84045"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp">
+            </ImageView>
+            <ImageView
+                android:background="#f8404d"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center">
+            </ImageView>
+            <ImageView
+                android:background="#f8404d"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="330dp">
+            </ImageView>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ScrollView
+            android:layout_alignParentTop="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include layout="@layout/item_post" />
+                <include layout="@layout/item_post" />
+                <include layout="@layout/item_post" />
+                <include layout="@layout/item_post" />
+                <include layout="@layout/item_post" />
 
-            <include layout="@layout/item_post" />
+            </LinearLayout>
 
-            <include layout="@layout/item_post" />
+        </ScrollView>
 
-            <include layout="@layout/item_post" />
+    </RelativeLayout>
 
-            <include layout="@layout/item_post" />
-        </LinearLayout>
-    </ScrollView>
+
 </LinearLayout>
 
